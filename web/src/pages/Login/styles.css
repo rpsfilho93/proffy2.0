@@ -1,0 +1,200 @@
+#page-login {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page-login .banner {
+  width: 100%;
+  height: 30rem;
+  background: var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-login .banner .logo-container {
+  text-align: center;
+}
+
+#page-login .banner .logo-container img {
+  height: 7rem;
+  margin-top: 2rem;
+}
+
+#page-login .banner .logo-container h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin-top: 0.4rem;
+  color: #fff;
+}
+
+#page-login main {
+  width: 100%;
+}
+
+#page-login main form {
+  padding: 0 9rem;
+}
+
+#page-login .form-title {
+  font-size: 3rem;
+  color: #32264d;
+  margin-top: 4rem;
+}
+
+#page-login form input::placeholder {
+  color: var(--color-text-complement);
+}
+
+#page-login form .remember-forgot-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#page-login form .remember-forgot-container .remember-container label {
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  color: var(--color-text-complement);
+  cursor: pointer;
+}
+
+#page-login form .remember-forgot-container a {
+  color: var(--color-text-complement);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+#page-login form .remember-forgot-container .remember-container {
+  display: flex;
+  align-items: center;
+}
+
+.remember-container > input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+}
+
+.remember-me-label {
+  display: relative;
+  left: 2rem;
+}
+
+.remember-me-label::before {
+  display: absolute;
+
+  content: url(../../assets/images/icons/Vector.png);
+  background: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.7rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+
+#remember-me:checked + .remember-me-label::before {
+  background: var(--color-secundary);
+}
+
+#page-login form button {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 4rem;
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  color: #9c98a6;
+  background: #dcdce5;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#page-login form button:hover {
+  background: var(--color-secundary);
+  color: #fff;
+}
+
+#page-login footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding: 0 3rem;
+}
+
+#page-login footer .for-free {
+  font-size: 1.2rem;
+  color: #9c98a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-login footer .for-free img {
+  margin-left: 0.4rem;
+  color: var(--color-text-complement);
+}
+
+#page-login footer .logon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-login footer .logon-container a {
+  color: var(--color-primary-darker);
+}
+
+.input-password-block img {
+  padding-top: 0.7rem;
+}
+
+@media (min-width: 1100px) {
+  #page-login {
+    flex-direction: row;
+  }
+
+  #page-login .banner {
+    flex: 1;
+    height: 100%;
+  }
+
+  #page-login main {
+    width: 50%;
+    margin-top: 8rem;
+    padding: 0 11rem;
+  }
+
+  #page-login main form {
+    padding: 0;
+  }
+
+  #page-login main form .form-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  #page-login main {
+    padding: 0 14rem;
+  }
+
+  #page-login main footer {
+    margin-top: 11rem;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+}

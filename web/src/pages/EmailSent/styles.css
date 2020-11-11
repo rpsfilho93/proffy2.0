@@ -1,0 +1,40 @@
+#page-email-sent {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page-email-sent .title {
+  color: #fff;
+}
+
+#page-email-sent span {
+  color: #d4c2ff;
+}
+
+#page-email-sent button {
+  width: 14rem;
+  height: 5.3rem;
+  margin-top: 4rem;
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  color: #fff;
+  background: var(--color-secundary);
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#page-email-sent button:hover {
+  background: var(--color-secundary-dark);
+}

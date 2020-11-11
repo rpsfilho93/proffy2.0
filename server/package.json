@@ -1,0 +1,44 @@
+{
+  "name": "proffyserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/src/server.js",
+    "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "knex:migrate": "knex --knexfile dist/knexfile.js migrate:latest",
+    "knex:rollback": "knex --knexfile dist/knexfile.js migrate:rollback",
+    "build": "tsc",
+    "postinstall": "cpx './src/views/*' 'dist/src/views'"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "@types/express-handlebars": "^3.1.0",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/multer": "^1.4.4",
+    "@types/nodemailer": "^6.4.0",
+    "@types/uuid": "^8.0.1",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.777.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cpx": "^1.5.0",
+    "date-fns": "^2.0.0-beta.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.2",
+    "mime": "^2.4.6",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.11",
+    "pg": "^8.4.1",
+    "uuid": "^8.3.0"
+  }
+}

@@ -1,0 +1,133 @@
+#page-forgot-password {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page-forgot-password .banner {
+  width: 100%;
+  height: 20rem;
+  background: var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-forgot-password .banner .logo-container {
+  text-align: center;
+}
+
+#page-forgot-password .banner .logo-container img {
+  height: 7rem;
+  margin-top: 4rem;
+}
+
+#page-forgot-password .banner .logo-container h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin-top: 0.4rem;
+  color: #fff;
+}
+
+#page-forgot-password main {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+#page-forgot-password main img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#page-forgot-password main form {
+  padding: 0 9rem;
+}
+
+#page-forgot-password .form-title {
+  font-size: 3rem;
+  color: #32264d;
+  margin-top: 4rem;
+}
+
+#page-forgot-password form input::placeholder {
+  color: var(--color-text-complement);
+}
+
+#page-forgot-password form button {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 3rem;
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  color: #9c98a6;
+  background: #dcdce5;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#page-forgot-password form button:hover {
+  background: var(--color-secundary);
+  color: #fff;
+}
+
+.input-password-block img {
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 1100px) {
+  #page-forgot-password {
+    flex-direction: row-reverse;
+  }
+
+  #page-forgot-password .banner {
+    flex: 1;
+    height: 100%;
+  }
+
+  #page-forgot-password main {
+    width: 50%;
+    padding: 0 11rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page-forgot-password main img {
+    align-self: start;
+    margin-bottom: 6rem;
+  }
+
+  #page-forgot-password main form {
+    padding: 0;
+  }
+
+  #page-forgot-password main form .title-container {
+    margin-bottom: 3rem;
+  }
+
+  #page-forgot-password main form .form-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  #page-forgot-password main {
+    padding: 0 16rem;
+  }
+
+  .input-password-block img {
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
+}

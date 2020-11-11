@@ -1,0 +1,134 @@
+#page-logon {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page-logon .banner {
+  width: 100%;
+  height: 20rem;
+  background: var(--color-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-logon .banner .logo-container {
+  text-align: center;
+}
+
+#page-logon .banner .logo-container img {
+  height: 7rem;
+}
+
+#page-logon .banner .logo-container h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin-top: 0.4rem;
+  color: #fff;
+}
+
+#page-logon main {
+  width: 100%;
+}
+
+#page-logon main img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#page-logon main form {
+  padding: 0 9rem;
+}
+
+#page-logon .form-title {
+  font-size: 3rem;
+  color: #32264d;
+}
+
+#page-logon form input::placeholder {
+  color: var(--color-text-complement);
+}
+
+#page-logon form button {
+  width: 100%;
+  height: 5.6rem;
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  color: #9c98a6;
+  background: #dcdce5;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin: 1rem 0;
+}
+
+#page-logon form button:hover {
+  background: var(--color-secundary);
+  color: #fff;
+}
+
+.input-password-block img {
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 1100px) {
+  #page-logon {
+    flex-direction: row-reverse;
+  }
+
+  #page-logon .banner {
+    flex: 1;
+    height: 100%;
+  }
+
+  #page-logon main {
+    width: 50%;
+    padding: 0 11rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page-logon main img {
+    align-self: start;
+    margin-bottom: 4rem;
+  }
+
+  #page-logon main form {
+    padding: 0;
+  }
+
+  #page-logon main form .title-container {
+    margin-bottom: 3rem;
+  }
+
+  #page-logon main form .form-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  #page-logon main {
+    padding: 0 16rem;
+  }
+
+  .input-password-block img {
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  #page-logon form button {
+    margin-top: 2rem;
+  }
+}

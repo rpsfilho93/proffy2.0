@@ -1,0 +1,271 @@
+#page-profile {
+  width: 100vw;
+  height: 100vh;
+}
+
+#page-profile .page-header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-profile .header-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+#page-profile .header-profile .avatar-input {
+  position: relative;
+  height: 11rem;
+}
+
+#page-profile .header-profile .avatar-input img {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+#page-profile .header-profile .avatar-input label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3.3rem;
+  width: 3.3rem;
+  background: var(--color-secundary);
+  border: 0;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#page-profile .header-profile .avatar-input label:hover {
+  background: var(--color-secundary-dark);
+}
+
+#page-profile .header-profile .avatar-input label img {
+  margin-top: 0.6rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  color: #fff;
+}
+
+#page-profile .header-profile .avatar-input input {
+  display: none;
+}
+
+#page-profile .header-profile strong {
+  font-size: 3rem;
+}
+
+#page-profile .page-header .header-content {
+  margin-bottom: 6.4rem;
+}
+
+#page-profile main {
+  background: var(--color-box-base);
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+  overflow: hidden;
+}
+#page-profile main .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#page-profile main .profile .input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-profile main .profile img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+#page-profile main .profile input {
+  width: 16rem;
+}
+
+#page-profile main .profile input::placeholder {
+  font-weight: 700;
+  color: var(--color-text-in-primary);
+}
+
+#page-profile main .profile strong {
+  color: #32264d;
+  margin-right: 13rem;
+}
+
+#page-profile main fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+
+#page-profile main fieldset + fieldset {
+  margin-top: 6.4rem;
+}
+
+#page-profile main .schedule-item {
+  position: relative;
+  border-bottom: 1px solid var(--color-line-in-white);
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
+#page-profile main .schedule-item + .schedule-item {
+}
+
+#page-profile main .schedule-item .schedule-item-button {
+  position: absolute;
+  width: 15rem;
+  bottom: -2.2rem;
+  left: calc(50% - 7.5rem);
+  border: 0;
+  background: #fff;
+  color: #e33d3d;
+  font-weight: bold;
+  font-size: 1.4rem;
+  z-index: 1;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#page-profile main fieldset legend {
+  font: 700 2.4rem Archivo;
+  color: var(--color-text-title);
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-profile main footer {
+  padding: 4rem 2.4rem;
+  background: var(--color-box-footer);
+  border-top: 1px solid var(--color-line-in-white);
+  margin-top: 6.4rem;
+}
+
+#page-profile main footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--color-text-complement);
+}
+
+#page-profile main footer p img {
+  margin-right: 2rem;
+}
+
+#page-profile main footer button {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+}
+
+#page-profile main footer button:hover {
+  background: var(--color-secundary-dark);
+}
+
+#page-profile main fieldset legend button {
+  background: none;
+  border: 0;
+  color: var(--color-primary);
+  font: 700 1.6rem Archivo;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#page-profile main fieldset legend button:hover {
+  color: var(--color-primary-dark);
+}
+
+@media (min-width: 700px) {
+  #page-profile {
+    max-width: 100%;
+  }
+
+  #page-profile .header-profile {
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+
+  #page-profile .header-profile .avatar-input {
+    height: 18rem;
+    margin-bottom: 1rem;
+  }
+
+  #page-profile .header-profile .avatar-input img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  #page-profile .header-profile .avatar-input label {
+    height: 5.3rem;
+    width: 5.3rem;
+    bottom: 0;
+  }
+
+  #page-profile .page-header .page-content {
+    margin-bottom: 0;
+  }
+
+  #page-profile main fieldset {
+    padding: 0 6.4rem;
+  }
+
+  #page-profile main .schedule-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 1.6rem;
+  }
+
+  #page-profile main .schedule-item .input-block {
+    margin-top: 0;
+  }
+
+  #page-profile main footer {
+    padding: 8rem 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #page-profile main footer p {
+    justify-content: space-between;
+  }
+
+  #page-profile main footer button {
+    width: 20rem;
+    margin-top: 0;
+  }
+}

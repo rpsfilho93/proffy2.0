@@ -1,0 +1,35 @@
+.input-password-block {
+  position: relative;
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 1.8rem;
+  border-radius: 0.8rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  padding: 0 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-password-block input {
+  border: 0;
+  background: none;
+  font: 1.6rem Archivo;
+  outline: 0;
+}
+
+.input-password-block:focus-within::after {
+  width: calc(100% - 3.2rem);
+  height: 2px;
+  content: '';
+  background: var(--color-primary-light);
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  bottom: 0;
+}
+
+.input-password-block img {
+  padding-left: 0.5rem;
+}
