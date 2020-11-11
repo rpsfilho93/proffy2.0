@@ -7,12 +7,12 @@
       <img alt="Ricardo Filho" src="https://img.shields.io/badge/-rpsfilho93-8257E5?style=flat&logo=Linkedin&logoColor=white" />
    </a>
   
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/rpsfilho93/proffy?color=774DD6">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/rpsfilho93/proffy2.0?color=774DD6">
   
   <img alt="License" src="https://img.shields.io/badge/license-MIT-8257E5">
   
   <a href="https://github.com/rpsfilho93/proffy/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/rpsfilho93/proffy?color=8257E5&logo=github">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/rpsfilho93/proffy2.0?color=8257E5&logo=github">
   </a>
 </p>
 
