@@ -64,7 +64,7 @@ https://rpsfilho-proffy.netlify.app
 ### Clone o repositório
 ```bash
 # Clone o Repositório
-$ git clone https://github.com/rpsfilho93/proffy.git
+$ git clone https://github.com/rpsfilho93/proffy2.0.git
 ```
 
 ### API
